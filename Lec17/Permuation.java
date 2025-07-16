@@ -18,7 +18,7 @@ public class Permuation {
 		}
 		
 		for(int i=0;i<arr.length;i++) {
-			
+		
 			if(ans.contains(arr[i])==false) {
 				
 				ans.add(arr[i]);
