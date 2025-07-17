@@ -3,15 +3,16 @@ import java.util.*;
 public class Palindromic_part {
 
 	public static void main(String[] args) {
-		
+		List<List<String>> ans= new ArrayList<>();
 		String s="abab";
-		partation(s,new ArrayList<>());
-
+		partation(s,new ArrayList<>(),ans);
+		System.out.println(ans);
 	}
-	public static void partation(String s,List<String> list) {
+	public static void partation
+	(String s,List<String> list,List<List<String>> ans) {
 		
 		if(s.length()==0) {
-			System.out.println(list);
+			ans.add(new ArrayList<>(list));
 			return;
 		}
 		
@@ -20,7 +21,7 @@ public class Palindromic_part {
 			String str=s.substring(0,i);
 			if(isPalendrom(str)==true) {
 				list.add(str);
-				partation(s.substring(i),list);
+				partation(s.substring(i),list,ans);
 				list.remove(list.size()-1);
 			}
 		}
