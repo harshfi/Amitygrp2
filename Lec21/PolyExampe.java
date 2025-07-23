@@ -1,7 +1,7 @@
 package Lec21;
 
 public class PolyExampe {
-
+     
 	public static void main(String[] args) {
 		
 		int sum=sum(2,3);

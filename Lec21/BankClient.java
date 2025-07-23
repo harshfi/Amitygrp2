@@ -11,6 +11,7 @@ public class BankClient {
 		System.out.println(user.checkBalance());
 		user.Deposit(12);
 		System.out.println(user.checkBalance());
+	
 
 	}
 
